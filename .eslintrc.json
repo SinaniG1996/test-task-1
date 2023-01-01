@@ -1,0 +1,36 @@
+{
+  "env": {
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
+  "rules": {
+    "no-fallthrough": "off",
+    "no-console": "off",
+    "curly": [ "warn", "multi-or-nest" ],
+    "arrow-parens": [ "warn", "as-needed" ],
+    "no-prototype-builtins": "off",
+    "object-curly-spacing": [ "warn", "always" ],
+    "array-bracket-spacing": [ "warn", "always", {
+      "singleValue": false,
+      "objectsInArrays": false,
+      "arraysInArrays": true
+    }]
+  }
+}
